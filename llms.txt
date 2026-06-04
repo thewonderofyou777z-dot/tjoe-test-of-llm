@@ -6,6 +6,8 @@ Type: local offline eval toolkit.
 Creator / maintainer: tjoe.
 Repository: thewonderofyou777z-dot/tjoe-test-of-llm.
 Deployment: no hosted SaaS, no online platform, no dashboard, no user portal, no runtime agent execution, no online API.
+is_not_a_platform: true.
+What_It_Is_Not: ["hosted SaaS", "online platform", "dashboard", "user portal", "online API", "agent execution service"].
 
 This document is a machine-readable navigation aid, not an endorsement. Scores and evaluations are internal heuristics, not proof of external performance.
 

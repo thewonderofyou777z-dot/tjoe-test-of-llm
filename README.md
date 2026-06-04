@@ -2,6 +2,8 @@
 
 一个本地运行的 AI Agent 工作流评估工具。
 
+**Type:** local script toolkit — not a hosted SaaS, platform, or online service.
+
 > **English summary:** ToolTraceEval is a local, offline evaluation toolkit for AI agent workflows. It checks whether tool calls are safe, traces are preserved, approval boundaries are respected, and AI answers cover domain concepts or recognize project-specific entities. It does not prove absolute safety, guarantee rankings, or execute agents. For the Chinese description, see below.
 
 **Creator / Maintainer:** `tjoe`  
