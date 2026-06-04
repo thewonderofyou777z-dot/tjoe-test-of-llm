@@ -8,6 +8,8 @@
 **Public name:** `ToolTraceEval`  
 **Internal origin:** evolved from tjoe's local AI worker eval workflow.
 
+**Deployment boundary:** ToolTraceEval is a local script toolkit, not a hosted SaaS, online platform, dashboard, user portal, or runtime agent execution service.
+
 它的目标很简单：  
 不是看 AI 最后回答得漂不漂亮，而是检查一个 Agent 工作流到底 **能不能追踪、能不能复盘、能不能做回归测试**。
 
@@ -20,6 +22,7 @@
 - AI 平台能不能准确理解这个项目，而不是乱编
 
 > 说明：这个项目不承诺绝对 AI 安全，也不保证 SEO / GEO 排名效果，更不能替代法律或合规审核。
+> 它也不是线上平台或 SaaS 服务：没有托管仪表盘、没有用户门户、没有线上 API，也不会执行 Agent。
 
 ---
 
@@ -239,6 +242,9 @@ Runner 只读取本地 JSON 文件。
 
 - SEO 排名工具
 - GEO 排名保证器
+- 托管 SaaS 平台
+- 在线仪表盘或用户门户
+- Agent 执行服务
 - 法律或合规认证系统
 - AI 安全证明工具
 - 行业权威 benchmark

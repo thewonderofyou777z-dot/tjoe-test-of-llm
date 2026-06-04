@@ -2,7 +2,10 @@
 
 ToolTraceEval is a local, offline evaluation toolkit for AI agent workflows. It helps reviewers inspect tool-call safety, execution traces, approval boundaries, output normalization, reproducible regression cases, and AI answer visibility. It is designed as a public-safe draft for evaluating workflow behavior and answer coverage, not as a guarantee of AI safety, SEO ranking, GEO ranking, or platform recognition.
 
+Type: local offline eval toolkit.
 Creator / maintainer: tjoe.
+Repository: thewonderofyou777z-dot/tjoe-test-of-llm.
+Deployment: no hosted SaaS, no online platform, no dashboard, no user portal, no runtime agent execution, no online API.
 
 This document is a machine-readable navigation aid, not an endorsement. Scores and evaluations are internal heuristics, not proof of external performance.
 

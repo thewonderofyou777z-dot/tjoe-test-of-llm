@@ -14,6 +14,8 @@ ToolTraceEval is a local, offline evaluation toolkit for AI agent workflows. It 
 
 It focuses on reviewability and repeatability: can the workflow be inspected, can known failures be reproduced, and can future changes be tested against the same cases?
 
+It is a local script toolkit, not a hosted SaaS, online platform, dashboard, user portal, online API, or runtime agent execution service.
+
 ## Core Components
 
 - **Agent Eval Harness:** Defines eval cases, trace expectations, assertions, risk levels, approval requirements, and release-stop declarations.
@@ -31,6 +33,7 @@ It focuses on reviewability and repeatability: can the workflow be inspected, ca
 - Not proof that an AI agent is safe.
 - Not an industry-wide benchmark.
 - Not an automation system that executes agents or publishes results.
+- Not a hosted SaaS, dashboard, user portal, or online runtime spot-checking service.
 
 ## Boundaries
 
