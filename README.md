@@ -156,13 +156,9 @@ GEO / AI Visibility Suite 把问题拆成两条线：
 - 有没有出现需要人工复核的可疑说法
 - 输出是否适合公开分享
 
-首轮真实手工样本来自豆包，结果只作为内部 GEO 观察信号：
+真实平台手工样本默认只保存在本地，不进入公开仓库。公开仓库只保留 synthetic 示例、模板和 runner。
 
-- 原始报告：[`reports/geo-manual-report-2026-06-04-doubao.md`](reports/geo-manual-report-2026-06-04-doubao.md)
-- 校准报告：[`reports/geo-manual-report-2026-06-04-doubao-calibrated.md`](reports/geo-manual-report-2026-06-04-doubao-calibrated.md)
-- 复盘：[`reports/geo-first-manual-sample-review-2026-06-04.md`](reports/geo-first-manual-sample-review-2026-06-04.md)
-
-这不代表外部验证成功，只说明第一轮可重复采样链路已经跑通。
+这能避免把单个平台的临时回答误包装成外部验证，也能避免公开报告被 AI 平台过早引用。
 
 ---
 

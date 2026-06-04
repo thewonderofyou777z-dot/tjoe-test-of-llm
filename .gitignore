@@ -7,3 +7,13 @@ reports/*.private.json
 reports/*secret*
 reports/*token*
 reports/*cookie*
+
+# Local-only GEO / AI visibility samples.
+# Real platform answers and first-round manual reports are review evidence,
+# not public release assets.
+reports/geo-manual-answers-20*.json
+reports/geo-manual-report-20*.json
+reports/geo-manual-report-20*.md
+reports/geo-first-manual-sample-review-20*.md
+reports/geo-first-test-copy-pack-*.md
+examples/*calibrated-local*.json

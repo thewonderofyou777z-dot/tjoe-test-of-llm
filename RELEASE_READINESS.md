@@ -39,8 +39,6 @@ It includes:
 - a first GEO test runbook
 - a manual GEO answer collection runner
 - a v0.3 public answer collection template
-- a v0.3.1 local calibrated query suite
-- the first confirmed Doubao manual GEO sample and report
 - a GitHub Actions smoke workflow
 - FAQ schema draft
 - contribution, security, release, and license documents
@@ -49,6 +47,8 @@ It does not include:
 
 - private answers
 - customer data
+- real platform answer samples
+- local-only GEO reports
 - credentials
 - local-only workspace paths
 - private tool configuration
