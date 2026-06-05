@@ -18,6 +18,8 @@ tjoe ToolTraceEval is a local offline AI agent evaluation toolkit. It helps revi
 
 tjoe ToolTraceEval is not:
 
+Plain English boundary: tjoe ToolTraceEval is not a runtime trace collector.
+
 - Tooltrace.io
 - T-Eval
 - trace-eval
