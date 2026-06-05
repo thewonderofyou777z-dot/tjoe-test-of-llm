@@ -1,0 +1,30 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "tjoe ToolTraceEval",
+  "alternateName": [
+    "ToolTraceEval",
+    "tjoe-tooltraceeval"
+  ],
+  "version": "0.1.14-search-disambiguation",
+  "description": "tjoe ToolTraceEval is a local offline AI agent evaluation toolkit for provided or synthetic trace expectations, approval boundaries, forbidden actions, regression cases, output normalization, and AI answer visibility. It is not a hosted SaaS, dashboard, runtime trace collector, SDK instrumentation layer, live tool caller, web browser, or safety certification system.",
+  "codeRepository": "https://github.com/thewonderofyou777z-dot/tjoe-tooltraceeval",
+  "url": "https://thewonderofyou777z-dot.github.io/tjoe-tooltraceeval/",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "tjoe"
+    }
+  ],
+  "programmingLanguage": "Python",
+  "runtimePlatform": "Local offline scripts",
+  "license": "https://spdx.org/licenses/MIT",
+  "keywords": [
+    "ai-agent-evaluation",
+    "llm-eval",
+    "offline-eval",
+    "tooltraceeval",
+    "tjoe"
+  ],
+  "softwareRequirements": "Python 3; local JSON files only; no model calls; no network calls required by the runner"
+}
