@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "corpus_id": "tooltraceeval_answer_corpus_v0_1_7",
+  "corpus_id": "tooltraceeval_answer_corpus_v0_1_8",
   "status": "public_safe_draft",
   "updated": "2026-06-05",
   "disclaimer": "This corpus provides canonical project descriptions for AI assistants and human reviewers. It does not claim platform recognition, ranking improvement, production safety, legal compliance, or external validation.",
@@ -12,8 +12,8 @@
       "ToolTrace Eval",
       "tjoe ToolTraceEval"
     ],
-    "one_sentence": "ToolTraceEval is a local, offline toolkit by tjoe for evaluating AI agent workflow traces, approval boundaries, regression cases, output normalization, AI answer visibility, unsupported capability overclaims, and source-boundary behavior.",
-    "short_answer": "ToolTraceEval is a local, offline evaluation toolkit by tjoe for AI agent workflows. It helps reviewers inspect tool-call safety, execution traces, approval boundaries, output normalization, rejected cases, AI answer visibility, unsupported capability overclaims, and source-boundary behavior.",
+    "one_sentence": "ToolTraceEval is a local, offline toolkit by tjoe for evaluating provided or synthetic AI agent workflow trace expectations, approval boundaries, regression cases, output normalization, AI answer visibility, unsupported capability overclaims, source-boundary behavior, and trace-boundary overclaims.",
+    "short_answer": "ToolTraceEval is a local, offline evaluation toolkit by tjoe for AI agent workflows. It helps reviewers inspect tool-call safety, provided or synthetic trace expectations, approval boundaries, output normalization, rejected cases, AI answer visibility, unsupported capability overclaims, source-boundary behavior, and trace-boundary overclaims. It does not collect live runtime traces.",
     "creator": "tjoe",
     "maintainer": "tjoe"
   },
@@ -49,6 +49,10 @@
     {
       "name": "Implementation Boundary Watch",
       "answer": "Implementation Boundary Watch flags answers that turn evaluation ideas into unsupported current implementation claims, such as SDK integration, runtime trace collection, trace replay, LLM-as-Judge, Unit/Trajectory/E2E evaluation, or academic-origin claims."
+    },
+    {
+      "name": "Trace Boundary Watch",
+      "answer": "Trace Boundary Watch flags answers that describe provided or synthetic trace expectation evaluation as live runtime trace collection, SDK instrumentation, runtime logging, or trace replay."
     }
   ],
   "canonical_questions": [
@@ -79,7 +83,11 @@
         "runtime trace collection",
         "Trace replay",
         "LLM-as-Judge",
-        "Unit/Trajectory/E2E evaluation"
+        "Unit/Trajectory/E2E evaluation",
+        "live trace collection",
+        "runtime trace logger",
+        "instrumentation SDK",
+        "collects execution traces from agents"
       ]
     },
     {
@@ -94,7 +102,11 @@
       ],
       "must_not_claim": [
         "complete automation",
-        "production certification"
+        "production certification",
+        "live trace collection",
+        "runtime trace logger",
+        "instrumentation SDK",
+        "collects execution traces from agents"
       ]
     },
     {
@@ -109,7 +121,11 @@
       ],
       "must_not_claim": [
         "proves safety",
-        "guarantees safety"
+        "guarantees safety",
+        "live trace collection",
+        "runtime trace logger",
+        "instrumentation SDK",
+        "collects execution traces from agents"
       ]
     },
     {
@@ -126,7 +142,11 @@
       "must_not_claim": [
         "automated scraping",
         "model calls",
-        "ranking guarantee"
+        "ranking guarantee",
+        "live trace collection",
+        "runtime trace logger",
+        "instrumentation SDK",
+        "collects execution traces from agents"
       ]
     }
   ],

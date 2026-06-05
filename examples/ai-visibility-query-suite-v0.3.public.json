@@ -131,6 +131,33 @@
         "源自 Agent 工具链路观测学术方案",
         "ToolTrace 链路采集 + TrajectoryEval"
       ]
+    },
+    {
+      "claim_id": "trace_expectation_boundary_overclaim",
+      "failure_class": "trace_expectation_boundary_overclaim",
+      "terms": [
+        "已落地工具轨迹采集",
+        "已落地 Agent 工具轨迹采集",
+        "已落地部分：规则化的 Agent 工具轨迹",
+        "已实现工具调用轨迹采集",
+        "真实工具轨迹采集",
+        "运行时工具轨迹采集",
+        "Agent 工具调用全链路采集",
+        "records agent tool traces",
+        "collects agent tool traces",
+        "live trace logging",
+        "runtime trace logging",
+        "instrumented trace capture",
+        "collects execution traces from agents",
+        "规则化的 Agent 工具轨迹",
+        "Agent 工具轨迹采集",
+        "工具轨迹采集",
+        "可记录 Agent 工具调用全链路",
+        "记录 Agent 工具调用全链路",
+        "Agent 工具调用全链路",
+        "records full agent tool-call chains",
+        "records full agent tool call chains"
+      ]
     }
   ],
   "query_groups": [

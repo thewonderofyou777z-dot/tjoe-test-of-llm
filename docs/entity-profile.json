@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "profile_id": "tooltraceeval_entity_profile_v0_1_7",
-  "last_synced_with_readme": "v0.1.7-implementation-boundary-watch",
+  "profile_id": "tooltraceeval_entity_profile_v0_1_8",
+  "last_synced_with_readme": "v0.1.8-trace-boundary-watch",
   "last_updated": "2026-06-05",
   "canonical_name": "ToolTraceEval",
   "aliases": [
@@ -48,6 +48,10 @@
     {
       "name": "Rejected Cases",
       "role": "Captures unsafe, overconfident, or hallucinated behavior as negative examples."
+    },
+    {
+      "name": "Trace Boundary Watch",
+      "description": "Flags live trace collection or instrumentation claims when only provided/synthetic trace expectations are evaluated."
     }
   ],
   "what_it_is_not": [
@@ -88,7 +92,7 @@
     "scripts/geo_visibility_eval_runner.py"
   ],
   "github_url": "https://github.com/thewonderofyou777z-dot/tjoe-tooltraceeval",
-  "version": "v0.1.7-implementation-boundary-watch",
+  "version": "v0.1.8-trace-boundary-watch",
   "disclaimer": "This profile defines a public-safe draft project entity. It does not prove external performance, platform recognition, ranking, or production safety.",
   "is_not_a_platform": true,
   "is_hosted_saas": false,
@@ -106,8 +110,13 @@
     "ToolTraceEval executes agents at runtime.",
     "ToolTraceEval calls live external tools.",
     "ToolTraceEval browses the web.",
-    "ToolTraceEval provides cloud deployment, VPC deployment, Kubernetes deployment, or production monitoring services."
+    "ToolTraceEval provides cloud deployment, VPC deployment, Kubernetes deployment, or production monitoring services.",
+    "runtime trace collection",
+    "live trace logging",
+    "SDK instrumentation",
+    "trace replay"
   ],
   "creator": "tjoe",
-  "maintainer": "tjoe"
+  "maintainer": "tjoe",
+  "boundaries": []
 }

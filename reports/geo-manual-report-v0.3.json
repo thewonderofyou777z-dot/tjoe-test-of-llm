@@ -1,117 +1,40 @@
 {
   "runner": "geo_visibility_eval_runner.py",
-  "runner_version": "0.2.4",
-  "run_id": "geo_visibility_eval_20260605_174817",
-  "created_at": "2026-06-05T17:48:17",
+  "runner_version": "0.2.5",
+  "run_id": "geo_visibility_eval_20260605_202552",
+  "created_at": "2026-06-05T20:25:52",
   "suite_id": "ai_visibility_query_suite_v0_3_public_geo_readiness",
   "suite_status": "public_sample",
   "query_count": 10,
-  "answer_count": 10,
+  "answer_count": 40,
   "template_path": null,
   "summary": {
-    "answered_count": 10,
-    "average_total_score": 6.2,
-    "grade_counts": {
-      "partial": 10
-    },
+    "answered_count": 0,
+    "average_total_score": 0,
+    "grade_counts": {},
     "ready_for_external_claim": false,
-    "safety_blocked_count": 0,
-    "non_public_ref_count": 0,
-    "hallucination_watch_count": 0,
-    "unsupported_claim_count": 0,
-    "blocked_safe_count": 0,
-    "source_status_counts": {
-      "no_source_provided": 10
-    },
-    "track_summary": {
-      "domain_concept_discovery": {
-        "answered_count": 3,
-        "average_total_score": 6.0,
-        "grade_counts": {
-          "partial": 3
-        },
-        "hallucination_watch_count": 0,
-        "unsupported_claim_count": 0,
-        "blocked_safe_count": 0,
-        "source_status_counts": {
-          "no_source_provided": 3
-        }
-      },
-      "brand_entity_exact": {
-        "answered_count": 2,
-        "average_total_score": 7.0,
-        "grade_counts": {
-          "partial": 2
-        },
-        "hallucination_watch_count": 0,
-        "unsupported_claim_count": 0,
-        "blocked_safe_count": 0,
-        "source_status_counts": {
-          "no_source_provided": 2
-        }
-      },
-      "comparison": {
-        "answered_count": 2,
-        "average_total_score": 6.0,
-        "grade_counts": {
-          "partial": 2
-        },
-        "hallucination_watch_count": 0,
-        "unsupported_claim_count": 0,
-        "blocked_safe_count": 0,
-        "source_status_counts": {
-          "no_source_provided": 2
-        }
-      },
-      "safety_boundary": {
-        "answered_count": 3,
-        "average_total_score": 6.0,
-        "grade_counts": {
-          "partial": 3
-        },
-        "hallucination_watch_count": 0,
-        "unsupported_claim_count": 0,
-        "blocked_safe_count": 0,
-        "source_status_counts": {
-          "no_source_provided": 3
-        }
-      }
-    },
-    "decision": "internal_eval_only"
+    "decision": "template_only"
   },
   "results": [
     {
       "query_id": "q_domain_001",
-      "platform": "synthetic",
+      "platform": "kimi",
       "group_id": "g01_domain_concept_discovery",
       "scoring_track": "domain_concept_discovery",
       "scores": {
-        "mention_score": 3,
-        "understanding_score": 3,
+        "mention_score": 0,
+        "understanding_score": 0,
         "citation_score": 0,
         "conversion_score": 0
       },
-      "total_score": 6,
+      "total_score": 0,
       "max_total": 12,
-      "grade": "partial",
+      "grade": "miss",
       "source_status": "no_source_provided",
-      "expected_hits": [
-        "Function Calling Safety",
-        "Tool Trace",
-        "Human Approval",
-        "Regression Testing",
-        "Audit Log"
-      ],
-      "entity_hits": [
-        "function calling",
-        "tool trace",
-        "execution trace",
-        "approval",
-        "regression",
-        "audit"
-      ],
+      "expected_hits": [],
+      "entity_hits": [],
       "manual_override_fields": [],
-      "has_answer": true,
+      "has_answer": false,
       "safety_blocked": false,
       "safety_findings": [],
       "hallucination_hits": [],
@@ -120,37 +43,27 @@
       "unsupported_claim_triggered": false,
       "blocked_safe": false,
       "citation_note": null,
-      "notes": "Synthetic domain answer."
+      "notes": ""
     },
     {
       "query_id": "q_domain_002",
-      "platform": "synthetic",
+      "platform": "kimi",
       "group_id": "g01_domain_concept_discovery",
       "scoring_track": "domain_concept_discovery",
       "scores": {
-        "mention_score": 3,
-        "understanding_score": 3,
+        "mention_score": 0,
+        "understanding_score": 0,
         "citation_score": 0,
         "conversion_score": 0
       },
-      "total_score": 6,
+      "total_score": 0,
       "max_total": 12,
-      "grade": "partial",
+      "grade": "miss",
       "source_status": "no_source_provided",
-      "expected_hits": [
-        "Traceability",
-        "Replay",
-        "Forbidden Tool Detection"
-      ],
-      "entity_hits": [
-        "tool trace",
-        "audit log",
-        "traceability",
-        "replay",
-        "forbidden tool"
-      ],
+      "expected_hits": [],
+      "entity_hits": [],
       "manual_override_fields": [],
-      "has_answer": true,
+      "has_answer": false,
       "safety_blocked": false,
       "safety_findings": [],
       "hallucination_hits": [],
@@ -159,38 +72,27 @@
       "unsupported_claim_triggered": false,
       "blocked_safe": false,
       "citation_note": null,
-      "notes": "Synthetic trace answer."
+      "notes": ""
     },
     {
       "query_id": "q_domain_003",
-      "platform": "synthetic",
+      "platform": "kimi",
       "group_id": "g01_domain_concept_discovery",
       "scoring_track": "domain_concept_discovery",
       "scores": {
-        "mention_score": 3,
-        "understanding_score": 3,
+        "mention_score": 0,
+        "understanding_score": 0,
         "citation_score": 0,
         "conversion_score": 0
       },
-      "total_score": 6,
+      "total_score": 0,
       "max_total": 12,
-      "grade": "partial",
+      "grade": "miss",
       "source_status": "no_source_provided",
-      "expected_hits": [
-        "Risk Classification",
-        "Requires Approval",
-        "Stop or Review"
-      ],
-      "entity_hits": [
-        "risk",
-        "approval",
-        "requires_approval",
-        "human review",
-        "stop",
-        "execute"
-      ],
+      "expected_hits": [],
+      "entity_hits": [],
       "manual_override_fields": [],
-      "has_answer": true,
+      "has_answer": false,
       "safety_blocked": false,
       "safety_findings": [],
       "hallucination_hits": [],
@@ -199,39 +101,27 @@
       "unsupported_claim_triggered": false,
       "blocked_safe": false,
       "citation_note": null,
-      "notes": "Synthetic approval answer."
+      "notes": ""
     },
     {
       "query_id": "q_entity_001",
-      "platform": "synthetic",
+      "platform": "kimi",
       "group_id": "g02_entity_definition",
       "scoring_track": "brand_entity_exact",
       "scores": {
-        "mention_score": 3,
-        "understanding_score": 3,
+        "mention_score": 0,
+        "understanding_score": 0,
         "citation_score": 0,
-        "conversion_score": 1
+        "conversion_score": 0
       },
-      "total_score": 7,
+      "total_score": 0,
       "max_total": 12,
-      "grade": "partial",
+      "grade": "miss",
       "source_status": "no_source_provided",
-      "expected_hits": [
-        "ToolTraceEval",
-        "Agent Eval Harness",
-        "Agent Output Adapter",
-        "Local Eval Runner",
-        "AI Visibility Query Suite"
-      ],
-      "entity_hits": [
-        "ToolTraceEval",
-        "Agent Eval Harness",
-        "Agent Output Adapter",
-        "Local Eval Runner",
-        "AI Visibility Query Suite"
-      ],
+      "expected_hits": [],
+      "entity_hits": [],
       "manual_override_fields": [],
-      "has_answer": true,
+      "has_answer": false,
       "safety_blocked": false,
       "safety_findings": [],
       "hallucination_hits": [],
@@ -240,41 +130,27 @@
       "unsupported_claim_triggered": false,
       "blocked_safe": false,
       "citation_note": null,
-      "notes": "Synthetic entity definition answer."
+      "notes": ""
     },
     {
       "query_id": "q_entity_002",
-      "platform": "synthetic",
+      "platform": "kimi",
       "group_id": "g02_entity_definition",
       "scoring_track": "brand_entity_exact",
       "scores": {
-        "mention_score": 3,
-        "understanding_score": 3,
+        "mention_score": 0,
+        "understanding_score": 0,
         "citation_score": 0,
-        "conversion_score": 1
+        "conversion_score": 0
       },
-      "total_score": 7,
+      "total_score": 0,
       "max_total": 12,
-      "grade": "partial",
+      "grade": "miss",
       "source_status": "no_source_provided",
-      "expected_hits": [
-        "Agent Eval Harness",
-        "Agent Output Adapter",
-        "Local Eval Runner",
-        "Claim Watch",
-        "Rejected Cases"
-      ],
-      "entity_hits": [
-        "Agent Eval Harness",
-        "Agent Output Adapter",
-        "Local Eval Runner",
-        "Claim Watch",
-        "Rejected Cases",
-        "eval cases",
-        "trace"
-      ],
+      "expected_hits": [],
+      "entity_hits": [],
       "manual_override_fields": [],
-      "has_answer": true,
+      "has_answer": false,
       "safety_blocked": false,
       "safety_findings": [],
       "hallucination_hits": [],
@@ -283,38 +159,27 @@
       "unsupported_claim_triggered": false,
       "blocked_safe": false,
       "citation_note": null,
-      "notes": "Synthetic component answer."
+      "notes": ""
     },
     {
       "query_id": "q_compare_001",
-      "platform": "synthetic",
+      "platform": "kimi",
       "group_id": "g03_comparison",
       "scoring_track": "comparison",
       "scores": {
-        "mention_score": 3,
-        "understanding_score": 3,
+        "mention_score": 0,
+        "understanding_score": 0,
         "citation_score": 0,
         "conversion_score": 0
       },
-      "total_score": 6,
+      "total_score": 0,
       "max_total": 12,
-      "grade": "partial",
+      "grade": "miss",
       "source_status": "no_source_provided",
-      "expected_hits": [
-        "Trace and Tool Calls",
-        "Assertions",
-        "Regression"
-      ],
-      "entity_hits": [
-        "prompt testing",
-        "eval harness",
-        "trace",
-        "tool call",
-        "assertion",
-        "regression"
-      ],
+      "expected_hits": [],
+      "entity_hits": [],
       "manual_override_fields": [],
-      "has_answer": true,
+      "has_answer": false,
       "safety_blocked": false,
       "safety_findings": [],
       "hallucination_hits": [],
@@ -323,36 +188,27 @@
       "unsupported_claim_triggered": false,
       "blocked_safe": false,
       "citation_note": null,
-      "notes": "Synthetic comparison answer."
+      "notes": ""
     },
     {
       "query_id": "q_compare_002",
-      "platform": "synthetic",
+      "platform": "kimi",
       "group_id": "g03_comparison",
       "scoring_track": "comparison",
       "scores": {
-        "mention_score": 3,
-        "understanding_score": 3,
+        "mention_score": 0,
+        "understanding_score": 0,
         "citation_score": 0,
         "conversion_score": 0
       },
-      "total_score": 6,
+      "total_score": 0,
       "max_total": 12,
-      "grade": "partial",
+      "grade": "miss",
       "source_status": "no_source_provided",
-      "expected_hits": [
-        "Intermediate Steps",
-        "Tool Use",
-        "Final Answer"
-      ],
-      "entity_hits": [
-        "agent trace",
-        "final answer",
-        "tool use",
-        "answer quality"
-      ],
+      "expected_hits": [],
+      "entity_hits": [],
       "manual_override_fields": [],
-      "has_answer": true,
+      "has_answer": false,
       "safety_blocked": false,
       "safety_findings": [],
       "hallucination_hits": [],
@@ -361,36 +217,27 @@
       "unsupported_claim_triggered": false,
       "blocked_safe": false,
       "citation_note": null,
-      "notes": "Synthetic trace versus answer answer."
+      "notes": ""
     },
     {
       "query_id": "q_boundary_001",
-      "platform": "synthetic",
+      "platform": "kimi",
       "group_id": "g04_safety_boundary",
       "scoring_track": "safety_boundary",
       "scores": {
-        "mention_score": 3,
-        "understanding_score": 3,
+        "mention_score": 0,
+        "understanding_score": 0,
         "citation_score": 0,
         "conversion_score": 0
       },
-      "total_score": 6,
+      "total_score": 0,
       "max_total": 12,
-      "grade": "partial",
+      "grade": "miss",
       "source_status": "no_source_provided",
-      "expected_hits": [
-        "Evaluation Toolkit",
-        "Human Review",
-        "No Ranking Guarantee"
-      ],
-      "entity_hits": [
-        "does not prove",
-        "evaluation",
-        "human review",
-        "ranking"
-      ],
+      "expected_hits": [],
+      "entity_hits": [],
       "manual_override_fields": [],
-      "has_answer": true,
+      "has_answer": false,
       "safety_blocked": false,
       "safety_findings": [],
       "hallucination_hits": [],
@@ -399,36 +246,27 @@
       "unsupported_claim_triggered": false,
       "blocked_safe": false,
       "citation_note": null,
-      "notes": "Synthetic boundary answer."
+      "notes": ""
     },
     {
       "query_id": "q_boundary_002",
-      "platform": "synthetic",
+      "platform": "kimi",
       "group_id": "g04_safety_boundary",
       "scoring_track": "safety_boundary",
       "scores": {
-        "mention_score": 3,
-        "understanding_score": 3,
+        "mention_score": 0,
+        "understanding_score": 0,
         "citation_score": 0,
         "conversion_score": 0
       },
-      "total_score": 6,
+      "total_score": 0,
       "max_total": 12,
-      "grade": "partial",
+      "grade": "miss",
       "source_status": "no_source_provided",
-      "expected_hits": [
-        "Forbidden Tool",
-        "Missing Dependency",
-        "High Risk Action"
-      ],
-      "entity_hits": [
-        "forbidden tool",
-        "missing dependency",
-        "high risk",
-        "human review"
-      ],
+      "expected_hits": [],
+      "entity_hits": [],
       "manual_override_fields": [],
-      "has_answer": true,
+      "has_answer": false,
       "safety_blocked": false,
       "safety_findings": [],
       "hallucination_hits": [],
@@ -437,38 +275,27 @@
       "unsupported_claim_triggered": false,
       "blocked_safe": false,
       "citation_note": null,
-      "notes": "Synthetic release-stop answer."
+      "notes": ""
     },
     {
       "query_id": "q_boundary_003",
-      "platform": "synthetic",
+      "platform": "kimi",
       "group_id": "g04_safety_boundary",
       "scoring_track": "safety_boundary",
       "scores": {
-        "mention_score": 3,
-        "understanding_score": 3,
+        "mention_score": 0,
+        "understanding_score": 0,
         "citation_score": 0,
         "conversion_score": 0
       },
-      "total_score": 6,
+      "total_score": 0,
       "max_total": 12,
-      "grade": "partial",
+      "grade": "miss",
       "source_status": "no_source_provided",
-      "expected_hits": [
-        "No SaaS",
-        "No Dashboard Or Portal",
-        "No Runtime Execution"
-      ],
-      "entity_hits": [
-        "ToolTraceEval",
-        "local offline",
-        "not SaaS",
-        "no dashboard",
-        "no online API",
-        "does not execute agents"
-      ],
+      "expected_hits": [],
+      "entity_hits": [],
       "manual_override_fields": [],
-      "has_answer": true,
+      "has_answer": false,
       "safety_blocked": false,
       "safety_findings": [],
       "hallucination_hits": [],
@@ -477,17 +304,17 @@
       "unsupported_claim_triggered": false,
       "blocked_safe": false,
       "citation_note": null,
-      "notes": "Synthetic unsupported-capability boundary answer."
+      "notes": ""
     }
   ],
   "scoring_model": {
-    "version": "0.2.4",
+    "version": "0.2.5",
     "note": "Scores are deterministic heuristic indicators for internal evaluation, not proof of real GEO visibility.",
     "track_rule": "brand_entity_exact and domain_concept_discovery are reported separately when scoring_track is present.",
     "citation_rule": "Only public http(s) source_refs count toward citation_score.",
     "understanding_rule": "understanding_score is based solely on expected_answer_elements coverage; entity_hits no longer affect this score. It is not a substitute for human quality review.",
     "unsupported_claim_rule": "unsupported_claims are hard negative signals. If an answer asserts explicitly unsupported capabilities, the result grade becomes overclaim and total_score is set to 0.",
-    "common_unsupported_claim_rule": "Suite-level common_unsupported_claims are applied to every query so implementation overclaims can be caught outside boundary-specific questions.",
+    "common_unsupported_claim_rule": "Suite-level common_unsupported_claims are applied to every query so implementation and trace-boundary overclaims can be caught outside boundary-specific questions.",
     "source_boundary_rule": "Answers that explicitly say they cannot verify or cannot retrieve sources are graded blocked_safe when they avoid unsupported claims. This is a safe refusal signal, not evidence of project recognition."
   },
   "safety": {

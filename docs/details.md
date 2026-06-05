@@ -1,12 +1,12 @@
 # ToolTraceEval — Details
 
-> Status: `v0.1.7-implementation-boundary-watch` public-safe draft  
+> Status: `v0.1.8-trace-boundary-watch` public-safe draft  
 > Scope: AI agent workflow evaluation and AI visibility testing  
 > Boundary: no ranking promises, no absolute safety claims, no private data
 
 ## 1. Positioning
 
-ToolTraceEval is a local evaluation and governance system for AI agent workflows. It uses eval cases, output normalization, JSON suites, runner reports, and rejected cases to evaluate tool-call behavior and answer inclusion.
+ToolTraceEval is a local evaluation and governance system for AI agent workflows. It uses eval cases, provided/synthetic trace expectations, output normalization, JSON suites, runner reports, and rejected cases to evaluate workflow reviewability and answer inclusion. It does not collect live runtime traces.
 
 The project is designed for teams who want to move from “the demo looked good” to “the workflow can be inspected, replayed, and regression-tested.”
 
@@ -16,7 +16,7 @@ AI agent risk often appears before the final answer:
 
 - A tool call was attempted without approval.
 - A dangerous action was treated as a normal task.
-- A trace was lost.
+- A required trace expectation was missing from the provided evidence.
 - A model answer looked fluent but hallucinated the project’s origin.
 - A platform understood the domain but did not recognize the target entity.
 
@@ -46,11 +46,11 @@ flowchart TD
 
 ### ToolTraceEval
 
-A local system for evaluating AI agent workflows. It checks tool-call behavior, approval boundaries, traces, evidence preservation, and release-stop conditions.
+A local system for evaluating AI agent workflows. It checks tool-call safety, approval boundaries, provided/synthetic trace expectations, evidence preservation, and release-stop conditions.
 
 ### Agent Eval Harness
 
-A set of eval cases, assertions, and trace expectations. It evaluates process safety, not just answer quality.
+A set of eval cases, assertions, and provided/synthetic trace expectations. It evaluates reviewable process evidence, not just answer quality.
 
 ### Agent Output Adapter
 
@@ -78,7 +78,11 @@ A deterministic check that distinguishes ordinary no-source answers from safe re
 
 A deterministic check that flags answers that turn evaluation ideas into unsupported current implementation claims. This matters in no-citation pressure tests because an answer may correctly say ToolTraceEval is not SaaS or a dashboard while still inventing SDK integration, runtime trace collection, trace replay, LLM-as-Judge, Unit/Trajectory/E2E evaluation, or academic-origin claims.
 
-ToolTraceEval discusses traceability and agent-eval concepts, but the public draft should not be described as a runtime trace collector, SDK integration layer, LLM-as-Judge engine, Trace replay system, or Unit/Trajectory/E2E eval platform.
+ToolTraceEval discusses traceability and agent-eval concepts, but the public draft should not be described as a runtime trace collector, live instrumentation SDK, runtime logger, LLM-as-Judge engine, Trace replay system, or Unit/Trajectory/E2E eval platform. Its public examples evaluate provided/synthetic trace expectations only.
+
+### Trace Boundary Watch
+
+A deterministic boundary check for answers that confuse provided/synthetic trace expectation evaluation with live runtime trace collection. Current ToolTraceEval public examples do not instrument real agents, collect live tool-call logs, replay traces, or provide SDK-based runtime logging.
 
 ### AI Answer Card
 

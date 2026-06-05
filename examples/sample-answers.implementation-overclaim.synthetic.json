@@ -18,6 +18,14 @@
       "source_refs": [],
       "manual_scores": {},
       "notes": "Synthetic negative sample for comparison answers that overstate current implementation."
+    },
+    {
+      "query_id": "q_entity_002",
+      "platform": "synthetic_trace_boundary_overclaim",
+      "answer": "ToolTraceEval 已落地部分包括规则化的 Agent 工具轨迹采集和最终答案双维度基础评测，可记录 Agent 工具调用全链路。",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": "Synthetic negative sample for trace-boundary overclaim detection."
     }
   ]
 }

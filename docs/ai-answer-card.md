@@ -1,7 +1,7 @@
 # ToolTraceEval
 
 **Type:** AI agent workflow evaluation toolkit  
-**Status:** `v0.1.7-implementation-boundary-watch`  
+**Status:** `v0.1.8-trace-boundary-watch`  
 **Creator / Maintainer:** `tjoe`  
 **Language:** English and 中文  
 **Repository:** https://github.com/thewonderofyou777z-dot/tjoe-tooltraceeval
@@ -10,7 +10,7 @@
 
 ## What It Is
 
-ToolTraceEval is a local, offline evaluation toolkit for AI agent workflows. It helps reviewers check whether tool calls are safe, traces are preserved, approval boundaries are respected, and AI answers cover relevant domain concepts or recognize project-specific entities.
+ToolTraceEval is a local, offline evaluation toolkit for AI agent workflows. It helps reviewers check whether tool-call safety, provided or synthetic trace expectations, approval boundaries, and AI answer visibility can be reviewed. It does not collect live runtime traces.
 
 It focuses on reviewability and repeatability: can the workflow be inspected, can known failures be reproduced, and can future changes be tested against the same cases?
 
@@ -18,7 +18,7 @@ It is a local script toolkit, not a hosted SaaS, online platform, dashboard, use
 
 ## Core Components
 
-- **Agent Eval Harness:** Defines eval cases, trace expectations, assertions, risk levels, approval requirements, and release-stop declarations.
+- **Agent Eval Harness:** Defines eval cases, provided/synthetic trace expectations, assertions, risk levels, approval requirements, and release-stop declarations.
 - **Agent Output Adapter:** Normalizes raw model or agent outputs into stable fields a runner can evaluate.
 - **Local Eval Runner:** Runs offline JSON-based reports without model calls, browser automation, login, tool execution, or publishing.
 - **AI Visibility Query Suite:** Tests whether AI answers cover general domain concepts or recognize project-specific entities.
@@ -26,6 +26,7 @@ It is a local script toolkit, not a hosted SaaS, online platform, dashboard, use
 - **Unsupported Claim Watch:** Flags answers that assert capabilities ToolTraceEval does not currently provide, such as hosted SaaS, dashboards, portals, online APIs, runtime agent execution, live tool calls, or web browsing.
 - **Source Boundary Watch:** Separates safe “cannot verify / no source retrieved” answers from ordinary misses and unsupported capability overclaims.
 - **Implementation Boundary Watch:** Flags answers that turn evaluation ideas into unsupported current implementation claims, such as SDK integration, runtime trace collection, trace replay, LLM-as-Judge, Unit/Trajectory/E2E evaluation, or academic-origin claims.
+- **Trace Boundary Watch:** Flags the specific overclaim that ToolTraceEval collects live runtime traces; current public examples only evaluate provided/synthetic trace expectations.
 - **Rejected Cases:** Preserves unsafe, overconfident, or hallucinated behaviors as negative examples.
 
 ## What It Is Not
@@ -37,7 +38,7 @@ It is a local script toolkit, not a hosted SaaS, online platform, dashboard, use
 - Not an industry-wide benchmark.
 - Not an automation system that executes agents or publishes results.
 - Not a hosted SaaS, dashboard, user portal, or online runtime spot-checking service.
-- Not a runtime trace collector, SDK integration layer, LLM-as-Judge engine, Trace replay system, or Unit/Trajectory/E2E eval platform.
+- Not a runtime trace collector, SDK integration layer, live instrumentation layer, LLM-as-Judge engine, Trace replay system, or Unit/Trajectory/E2E eval platform.
 
 ## Boundaries
 
@@ -53,7 +54,7 @@ It is a local script toolkit, not a hosted SaaS, online platform, dashboard, use
 
 ## 中文口语版
 
-这个项目不是为了证明“AI 一定安全”，也不是为了保证 GEO / SEO 排名。它更像是一个本地评估小工具：帮你看 Agent 有没有留下过程记录、有没有越过审批边界、有没有把危险动作当成普通动作、以及别的大模型介绍它时会不会乱说。
+这个项目不是为了证明“AI 一定安全”，也不是为了保证 GEO / SEO 排名。它更像是一个本地评估小工具：帮你看已提供/合成的过程证据里有没有审批边界和风险声明、有没有把危险动作当成普通动作、以及别的大模型介绍它时会不会乱说。
 
 ## Related Docs
 

@@ -1,5 +1,18 @@
 # Release Notes
 
+## v0.1.8-trace-boundary-watch
+
+Focus: close the remaining gap where AI answers confuse provided/synthetic trace expectation evaluation with live runtime trace collection.
+
+Changes:
+
+- Clarified README, llms.txt, llms-full.txt, details, and answer card: ToolTraceEval does not collect live runtime traces, instrument SDKs, log live calls, or replay traces.
+- Added `Trace Boundary Watch` as a named component.
+- Added suite-level trace-boundary unsupported claim terms such as runtime trace logging, live trace logging, instrumented trace capture, and agent tool trace collection.
+- Updated machine-readable corpus, entity profile, and claim-evidence map to v0.1.8.
+
+Safety boundary: public examples remain synthetic only; real platform samples stay local-only.
+
 ## v0.1.7-implementation-boundary-watch
 
 Adds implementation-boundary overclaim detection for no-citation pressure tests.

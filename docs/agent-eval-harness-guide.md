@@ -12,7 +12,7 @@ The existing GEO / AI Visibility runner evaluates whether an AI answer covers th
 
 > Did the agent workflow behave safely and leave enough trace evidence to review?
 
-It records and evaluates expected process traces such as task classification, approval handling, forbidden tool blocking, dependency checks, and release-stop conditions.
+It evaluates provided or synthetic process trace expectations such as task classification, approval handling, forbidden tool blocking, dependency checks, and release-stop conditions. It does not collect live runtime traces.
 
 ## System Map
 
@@ -61,7 +61,7 @@ This harness does not:
 
 | Path | Input | Evaluates |
 |---|---|---|
-| Agent Eval Harness | synthetic agent traces and eval cases | workflow behavior, approval boundaries, trace evidence |
+| Agent Eval Harness | synthetic/provided trace expectations and eval cases | workflow behavior, approval boundaries, trace evidence |
 | GEO / AI Visibility Runner | AI answer samples and query suites | answer coverage, entity recognition, citation signals |
 
 The two paths are intentionally independent. Keeping them separate prevents a good answer-level score from hiding a bad process-level trace.

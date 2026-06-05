@@ -1,25 +1,32 @@
 {
-  "template_id": "ai_answer_sample_template_20260605_174817",
+  "template_id": "geo_manual_answer_template_20260605_202551",
   "suite_id": "ai_visibility_query_suite_v0_3_public_geo_readiness",
-  "created_at": "2026-06-05T17:48:17",
+  "created_at": "2026-06-05T20:25:51",
   "data_safety": {
     "contains_secret": false,
     "contains_private_message": false,
     "contains_customer_data": false,
     "contains_personal_data": false,
-    "safe_to_share": "internal_only",
+    "safe_to_share": "review_required",
     "safe_to_train": false,
     "review_required": true
   },
   "instructions": [
     "Paste public AI answer text only.",
-    "Do not include cookies, tokens, accounts, private messages, or customer data.",
-    "Use manual_scores only if a human reviewer intentionally overrides heuristic scoring."
+    "Do not include cookies, tokens, account identifiers, private messages, local paths, or customer data.",
+    "Keep source_refs empty unless the platform provides public http(s) links.",
+    "Leave answer empty for queries you did not run."
+  ],
+  "platforms": [
+    "chatgpt",
+    "perplexity",
+    "doubao",
+    "kimi"
   ],
   "answers": [
     {
       "query_id": "q_domain_001",
-      "platform": "manual_paste",
+      "platform": "chatgpt",
       "answer": "",
       "source_refs": [],
       "manual_scores": {},
@@ -27,7 +34,7 @@
     },
     {
       "query_id": "q_domain_002",
-      "platform": "manual_paste",
+      "platform": "chatgpt",
       "answer": "",
       "source_refs": [],
       "manual_scores": {},
@@ -35,7 +42,7 @@
     },
     {
       "query_id": "q_domain_003",
-      "platform": "manual_paste",
+      "platform": "chatgpt",
       "answer": "",
       "source_refs": [],
       "manual_scores": {},
@@ -43,7 +50,7 @@
     },
     {
       "query_id": "q_entity_001",
-      "platform": "manual_paste",
+      "platform": "chatgpt",
       "answer": "",
       "source_refs": [],
       "manual_scores": {},
@@ -51,7 +58,7 @@
     },
     {
       "query_id": "q_entity_002",
-      "platform": "manual_paste",
+      "platform": "chatgpt",
       "answer": "",
       "source_refs": [],
       "manual_scores": {},
@@ -59,7 +66,7 @@
     },
     {
       "query_id": "q_compare_001",
-      "platform": "manual_paste",
+      "platform": "chatgpt",
       "answer": "",
       "source_refs": [],
       "manual_scores": {},
@@ -67,7 +74,7 @@
     },
     {
       "query_id": "q_compare_002",
-      "platform": "manual_paste",
+      "platform": "chatgpt",
       "answer": "",
       "source_refs": [],
       "manual_scores": {},
@@ -75,7 +82,7 @@
     },
     {
       "query_id": "q_boundary_001",
-      "platform": "manual_paste",
+      "platform": "chatgpt",
       "answer": "",
       "source_refs": [],
       "manual_scores": {},
@@ -83,7 +90,7 @@
     },
     {
       "query_id": "q_boundary_002",
-      "platform": "manual_paste",
+      "platform": "chatgpt",
       "answer": "",
       "source_refs": [],
       "manual_scores": {},
@@ -91,7 +98,247 @@
     },
     {
       "query_id": "q_boundary_003",
-      "platform": "manual_paste",
+      "platform": "chatgpt",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_domain_001",
+      "platform": "perplexity",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_domain_002",
+      "platform": "perplexity",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_domain_003",
+      "platform": "perplexity",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_entity_001",
+      "platform": "perplexity",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_entity_002",
+      "platform": "perplexity",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_compare_001",
+      "platform": "perplexity",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_compare_002",
+      "platform": "perplexity",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_boundary_001",
+      "platform": "perplexity",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_boundary_002",
+      "platform": "perplexity",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_boundary_003",
+      "platform": "perplexity",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_domain_001",
+      "platform": "doubao",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_domain_002",
+      "platform": "doubao",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_domain_003",
+      "platform": "doubao",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_entity_001",
+      "platform": "doubao",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_entity_002",
+      "platform": "doubao",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_compare_001",
+      "platform": "doubao",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_compare_002",
+      "platform": "doubao",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_boundary_001",
+      "platform": "doubao",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_boundary_002",
+      "platform": "doubao",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_boundary_003",
+      "platform": "doubao",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_domain_001",
+      "platform": "kimi",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_domain_002",
+      "platform": "kimi",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_domain_003",
+      "platform": "kimi",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_entity_001",
+      "platform": "kimi",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_entity_002",
+      "platform": "kimi",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_compare_001",
+      "platform": "kimi",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_compare_002",
+      "platform": "kimi",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_boundary_001",
+      "platform": "kimi",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_boundary_002",
+      "platform": "kimi",
+      "answer": "",
+      "source_refs": [],
+      "manual_scores": {},
+      "notes": ""
+    },
+    {
+      "query_id": "q_boundary_003",
+      "platform": "kimi",
       "answer": "",
       "source_refs": [],
       "manual_scores": {},
