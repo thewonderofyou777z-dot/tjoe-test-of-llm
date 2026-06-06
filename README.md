@@ -9,11 +9,9 @@ TjoeReviewKit 是 tjoe 的本地离线工作流复盘检查工具包，用来检
 
 **Creator / Maintainer:** `tjoe`  
 **Primary public name:** `TjoeReviewKit`  
-**Former names:** kept only as repository history  
 **Internal origin:** evolved from tjoe's local AI worker review workflow.
 **Canonical details page:** https://thewonderofyou777z-dot.github.io/tjoe-reviewkit/
 **TjoeReviewKit page:** https://thewonderofyou777z-dot.github.io/tjoe-reviewkit/tjoereviewkit.html
-**Search disambiguation page:** https://thewonderofyou777z-dot.github.io/tjoe-reviewkit/search-disambiguation.html
 
 **Deployment boundary:** TjoeReviewKit is a local script review toolkit, not a hosted SaaS, online platform, dashboard, user portal, online API, runtime gateway, runtime agent execution service, runtime trace collector, SDK instrumentation layer, live tool caller, or web browser.
 
@@ -63,7 +61,6 @@ TjoeReviewKit 是 tjoe 的本地离线工作流复盘检查工具包，用来检
 | Unsupported Claim Watch | 抓“当前不支持的能力被说成支持”，例如 SaaS、dashboard、runtime gateway、live tool calls |
 | Source Boundary Watch | 抓“缺少来源时是否安全拒答”，区分 `blocked_safe`、`source_not_retrieved` 和普通低分 |
 | Implementation Boundary Watch | 抓“把概念方向夸成已实现能力”，例如 SDK、runtime trace collection、Trace replay、LLM-as-Judge、Unit/Trajectory/E2E |
-| Trace Boundary Watch | 抓“把离线 trace expectation 评估说成实时 trace 采集/埋点”的误读 |
 | Natural Answer Boundary | 抓“根据项目名 Tool + Trace + Eval 自行推断功能”的自然问法误读 |
 | Rejected Cases | 保存坏案例，防止同类错误反复出现 |
 
@@ -73,7 +70,7 @@ TjoeReviewKit 是 tjoe 的本地离线工作流复盘检查工具包，用来检
 
 | 项目 | 内容 |
 |---|---|
-| Release | `v0.2.2-tjoereviewkit-minimal-positioning` |
+| Release | `v0.3.0-clean-reviewkit-identity` |
 | Runner | `geo_visibility_eval_runner.py v0.2.5` |
 | 状态 | 公共安全草稿版 |
 | 是否联网 | 不联网 |
@@ -116,7 +113,6 @@ python3 -m json.tool agent_eval/synthetic-eval-report-v0.1.json
 
 | 路径 | 评估什么 |
 |---|---|
-| Agent Eval Harness | 评估已提供/合成的过程证据：trace expectation、审批边界、禁止工具、发布阻断声明 |
 | GEO / AI Visibility Runner | 评估回答结果：概念覆盖、实体识别、引用信号、可疑声明、unsupported capability overclaim、source boundary |
 
 简单说：
@@ -160,7 +156,6 @@ GEO / AI Visibility Suite 把问题拆成两条线：
 | 评估轨道 | 测什么 | 不代表什么 |
 |---|---|---|
 | `domain_concept_discovery` | AI 是否理解工具调用、安全审批、回归测试、审计日志等通用概念 | 不代表它认识这个项目 |
-| `brand_entity_exact` | AI 是否准确识别 ToolTraceEval 这类具体项目实体 | 不代表它真的具备领域深度 |
 
 ---
 
@@ -292,12 +287,7 @@ Runner 只读取本地 JSON 文件。
 - 增加 unsupported claim watch，用公开 synthetic negative sample 捕捉 SaaS / dashboard / runtime / live tool overclaim。已在 `v0.1.5-practical-overclaim-watch` 完成
 - 增加 source boundary watch，用公开 synthetic safe refusal sample 区分 `blocked_safe`、`source_not_retrieved` 和普通 `miss`。已在 `v0.1.6-practical-source-boundary` 完成
 - 增加 implementation boundary watch，用 suite-level common unsupported claims 捕捉 SDK / runtime trace / LLM-as-Judge / Unit-Trajectory-E2E 等实现能力夸大。已在 `v0.1.7-implementation-boundary-watch` 完成
-- 增加 trace boundary watch，明确项目评估的是已提供/合成的 trace expectation，不采集真实运行时 trace。已在 `v0.1.8-trace-boundary-watch` 完成
-- 增加 natural answer boundary，把“不要从 ToolTraceEval 名字推断能力”的规则前置到 README / llms / answer card。已在 `v0.1.14-search-disambiguation` 完成
 - 增加 natural query guidance，明确 `owner/repo` 和 canonical page URL 是首轮实体锚点，短名问法是 overclaim 压力测试。
-- 增加短名消歧页和根目录消歧文件，降低 `tjoe ToolTraceEval` 被拆词误读为 runtime trace / SDK 产品的概率。
-- 增加 search disambiguation、`CITATION.cff` 和 `codemeta.json`，把 tjoe ToolTraceEval 与 Tooltrace / T-Eval / trace-eval 等相似实体区分开。
-- 增加 `TjoeEvalKit` 作为主品牌 alias，降低 `ToolTraceEval` 描述性命名导致的自然问法误读。
 - 增加 `TjoeReviewKit` 作为更低先验的主品牌 alias，把定位从“Agent eval / trace”收窄为“本地离线工作流复盘检查”。
 
 ---

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "corpus_id": "tjoereviewkit_answer_corpus_v0_2_2",
+  "corpus_id": "tjoereviewkit_answer_corpus_v0_3_0",
   "status": "public_safe_draft",
   "updated": "2026-06-06",
   "disclaimer": "This corpus provides canonical project descriptions for AI assistants and human reviewers. It does not claim platform recognition, ranking improvement, production safety, legal compliance, or external validation.",
@@ -8,10 +8,7 @@
     "name": "TjoeReviewKit",
     "aliases": [
       "TjoeReviewKit",
-      "TjoeEvalKit",
-      "ToolTraceEval",
-      "tjoe ToolTraceEval",
-      "tjoe-reviewkit"
+      "Tjoe local review kit"
     ],
     "one_sentence": "TjoeReviewKit is tjoe's local offline workflow review kit for checking prepared examples, rules, answers, and reports. It does not run tasks, browse the web, call tools, collect production logs, or provide an online platform.",
     "short_answer": "TjoeReviewKit is tjoe's local offline workflow review kit for checking prepared examples, rules, answers, and reports. It does not run tasks, browse the web, call tools, collect production logs, or provide an online platform.",
@@ -41,7 +38,7 @@
     },
     {
       "name": "Unsupported Claim Watch",
-      "answer": "Unsupported Claim Watch flags answers that assert capabilities ToolTraceEval does not currently provide, such as hosted SaaS, dashboards, portals, online APIs, runtime agent execution, live tool calls, or web browsing."
+      "answer": "Unsupported Claim Watch flags answers that assert capabilities TjoeReviewKit does not currently provide, such as hosted SaaS, dashboards, portals, online APIs, runtime agent execution, live tool calls, or web browsing."
     },
     {
       "name": "Source Boundary Watch",
@@ -57,7 +54,7 @@
     },
     {
       "name": "Natural Answer Boundary",
-      "answer": "Natural Answer Boundary prevents answers from inferring current implementation capabilities from the name ToolTraceEval instead of grounding claims in public project files."
+      "answer": "Natural Answer Boundary prevents answers from inferring current implementation capabilities from a project name instead of grounding claims in public project files."
     }
   ],
   "canonical_questions": [
@@ -84,43 +81,6 @@
         "runtime trace collection",
         "LLM-as-Judge",
         "Unit/Trajectory/E2E evaluation"
-      ]
-    },
-    {
-      "question_id": "qa_001",
-      "question": "What is ToolTraceEval?",
-      "answer": "ToolTraceEval is a former name for TjoeReviewKit, tjoe's local offline AI workflow review kit. It helps reviewers inspect prepared examples, approval boundaries, forbidden actions, regression cases, output normalization, and AI answer review. It is not a live trace collector, SDK, online platform, or tool execution service.",
-      "must_include": [
-        "local offline evaluation toolkit",
-        "AI agent workflows",
-        "tool-call safety",
-        "execution traces",
-        "approval boundaries"
-      ],
-      "must_not_claim": [
-        "absolute safety proof",
-        "SEO ranking guarantee",
-        "GEO ranking guarantee",
-        "platform endorsement",
-        "hosted SaaS",
-        "dashboard",
-        "portal",
-        "online API",
-        "runtime agent execution",
-        "live tool calls",
-        "web browsing",
-        "SDK integration",
-        "runtime trace collection",
-        "Trace replay",
-        "LLM-as-Judge",
-        "Unit/Trajectory/E2E evaluation",
-        "live trace collection",
-        "runtime trace logger",
-        "instrumentation SDK",
-        "collects execution traces from agents",
-        "infers capabilities from name",
-        "live runtime instrumentation",
-        "tool execution service"
       ]
     },
     {
@@ -190,7 +150,7 @@
     },
     {
       "track": "brand_entity_exact",
-      "meaning": "The answer recognizes ToolTraceEval or its named components."
+      "meaning": "The answer recognizes TjoeReviewKit or its named components."
     },
     {
       "track": "comparison",

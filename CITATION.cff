@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: "TjoeReviewKit"
-message: "If you use or reference this software, cite it as TjoeReviewKit, tjoe's local offline AI workflow review kit. Former names: TjoeEvalKit and tjoe ToolTraceEval."
+message: "If you use or reference this software, cite it as TjoeReviewKit, tjoe's local offline AI workflow review kit."
 type: software
 authors:
   - name: tjoe
@@ -14,5 +14,5 @@ keywords:
   - tjoereviewkit
   - tjoe
 license: MIT
-version: "0.2.2-tjoereviewkit-minimal-positioning"
+version: "0.3.0-clean-reviewkit-identity"
 date-released: "2026-06-06"

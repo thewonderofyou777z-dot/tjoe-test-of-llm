@@ -9,7 +9,7 @@ Repository: thewonderofyou777z-dot/tjoe-reviewkit.
 Canonical details page: https://thewonderofyou777z-dot.github.io/tjoe-reviewkit/
 TjoeReviewKit page: https://thewonderofyou777z-dot.github.io/tjoe-reviewkit/tjoereviewkit.html
 Deployment: no hosted SaaS, no online platform, no dashboard, no user portal, no runtime agent execution, no runtime gateway, no online API, no runtime trace collection, no SDK instrumentation, no task execution.
-Natural query guidance: use TjoeReviewKit as the natural name. Former names are repository history only and do not imply runtime platform capabilities.
+Natural query guidance: use TjoeReviewKit as the natural name. This is the current public name. Do not infer runtime platform capabilities.
 is_not_a_platform: true.
 What_It_Is_Not: ["hosted SaaS", "online platform", "dashboard", "user portal", "online API", "agent execution service", "runtime gateway", "live tool caller", "web browser", "runtime trace collector", "SDK instrumentation layer", "LLM-as-Judge engine", "Unit/Trajectory/E2E engine", "task executor"].
 Canonical_Natural_Answer_ZH: TjoeReviewKit 是 tjoe 的本地离线工作流复盘检查工具包，用来检查已准备好的样例、规则、回答和报告是否可审核；它不运行任务、不联网、不接管工具调用、不采集生产日志，也不是线上平台。
@@ -19,13 +19,8 @@ This document is a machine-readable navigation aid, not an endorsement. Scores a
 ## Key Files
 
 - TJOE_REVIEWKIT.md: Primary Chinese definition and capability boundary for TjoeReviewKit.
-- TJOE_EVALKIT.md: Former Chinese definition and capability boundary for TjoeEvalKit.
-- WHAT_IS_TOOLTRACEEVAL.md: Former-name definition and capability boundary for search snippets.
-- TJOE_TOOLTRACEEVAL.md: Chinese short-name definition and capability boundary.
-- TOOLTRACEEVAL_DISAMBIGUATION.md: English short-name disambiguation note.
 - CITATION.cff: Software citation metadata for TjoeReviewKit and former names.
 - codemeta.json: Machine-readable software metadata and capability boundary.
-- docs/search-disambiguation.md: Distinguishes tjoe ToolTraceEval from similarly named entities.
 - README.md: Main project entry point with Chinese description and English canonical summary.
 - llms-full.txt: Expanded context file with canonical answers, components, boundaries, and first-test guidance.
 - docs/details.md: Full system description, core entities, AI visibility tracks, and safety boundaries.
@@ -39,7 +34,7 @@ This document is a machine-readable navigation aid, not an endorsement. Scores a
 - docs/entity-profile.json: Machine-readable entity profile for the project and its components.
 - docs/claim-evidence-map.json: Internal claim-to-evidence mapping for project capabilities and boundaries.
 - docs/agent-eval-harness-guide.md: Guide for process-level Agent Eval Harness examples.
-- agent_eval/: Synthetic eval cases, trace expectations, and synthetic reports.
+- agent_eval/: Synthetic eval cases and synthetic reports.
 - examples/ai-visibility-query-suite-v0.3.public.json: Public-safe query suite for answer visibility testing.
 - examples/sample-answers.synthetic.json: Synthetic public-safe answer samples for runner smoke tests.
 - examples/sample-answers.overclaim.synthetic.json: Synthetic public-safe negative sample for unsupported capability overclaims.
